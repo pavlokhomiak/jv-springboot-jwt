@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: root
+    password: password
+    url: jdbc:mysql://localhost:3306/university_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  jwt:
+    key: njk;njkvlfnjk;fnvjdf;klnvjdfk;nvjdnfvkdnfvjklv;jkdfl
+    tokenPrefix: 'Bearer: '
+    tokenExpirationAfterDays: 10
